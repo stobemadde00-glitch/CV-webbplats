@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitt CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+</head>
+<body>
+    <header class="header">
+  <h1>Madeleine Stöbe</h1>
+  <nav>
+    <ul class="menu">
+      <li><a href="#about">Om mig</a></li>
+      <li><a href="#education">Utbildning</a></li>
+      <li><a href="#experience">Erfarenhet</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="main-grid">
+<section id="about" class="about">
+      <img src="img/profil.jpg" alt="Profilbild på mig" class="profile-img">
+    <h2>Om mig</h2>
+    <p>
+      Effektiv och noggrann produktionsplanerare med erfarenhet av lager, administration, och kundkontakt. Snabblärd, teknikintresserad och van att arbeta i högt tempo med nya system. Jag söker denna tjänst då jag vill vidare utveckla mig inom administration. 
+
+    </p>
+  </section>
+<section>
+  <h2>Mina intressen</h2>
+
+  <div class="splide" role="region" aria-label="Bildspel med intressen">
+    <div class="splide__track">
+      <ul class="splide__list">
+
+        <li class="splide__slide">
+          <img src="img/slide1.jpg" alt="Intresse 1">
+        </li>
+
+        <li class="splide__slide">
+          <img src="img/slide2.jpg" alt="Intresse 2">
+        </li>
+
+        <li class="splide__slide">
+          <img src="img/slide3.jpg" alt="Intresse 3">
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+  <section id="education">
+    <h2>Utbildning</h2>
+    <ul>
+      <li>Webbutveckling 1 – Komvux/Gymnasiet (2025-2026)</li>
+      <li>Administration 2 - Komvux/Gymnasiet (2025-2026)</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Erfarenhet</h2>
+    <p>
+     Jag har tidigare jobbat som produktionsplanerare på apotek hjärtats e-handel i Norrköping och jobbat som budbilsförare åt ett mindre företag. Jag har också jobbat på Postnords lager och dessutom jobbat på McDonald's. 
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <p>Email: stobemadde00@gmail.com</p>
+    <p>Telefon: 0721777821</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 – Madeleine Stöbe</p>
+</footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Splide('.splide', {
+      type: 'loop',
+      perPage: 1,
+      autoplay: true,
+      interval: 3000,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+    }).mount();
+  });
+</script>
+
+</body>
+</html>

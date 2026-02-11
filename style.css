@@ -1,0 +1,101 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+    background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background: #fff;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Main layout – CSS Grid */
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 3rem;
+}
+
+/* Sections */
+section {
+  background: #ffe6f0; /* ljusrosa */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: #eee;
+}
+
+/* Mobilanpassning */
+@media (max-width: 700px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.splide {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.splide img {
+  width: 100%;
+  border-radius: 10px;
+}
+.about {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;          /* mer luft mellan bild och text */
+  padding: 3rem;       /* mer luft runt hela rutan */
+}
+
+
+.about-text {
+  max-width: 550px;
+}
+.profile-img {
+  width: 180px;
+  border-radius: 50%;
+}
+.menu a:hover {
+  color: #0077cc;
+}
